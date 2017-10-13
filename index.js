@@ -25,8 +25,8 @@ fs.writeFile('./archit.csv', data, function (err, result) {
             console.log('Archit.csv written to disk successfully!');
             fs.readFile("./archit.csv", function (err, data) {
                 mailer.send_mail({
-                    sender: 'architgajjar@gmail.com',
-                    to: 'gajjararchit@gmail.com',
+                    sender: 'sender_email',
+                    to: 'receiver_email',
                     subject: 'Attachment!',
                     body: 'mail content...',
                     attachments: [{'filename': 'archit.csv', 'content': data}]
