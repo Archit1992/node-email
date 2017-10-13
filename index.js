@@ -10,7 +10,7 @@ exports.handler = (event, context, callback) => {
     var data = "Archit_1, Archit_2, Archit_3, Archit_4";
     
     mailer.SMTP = {
-        host: 'email-smtp.us-east-1.amazonaws.com', 
+        host: 'host_name', 
         port:587,
         use_authentication: true, 
         user: 'SMTP_user',
